@@ -17,6 +17,6 @@
         NOTE: Developer's must replace the following resource strings with their server 
         address and server port. 
     -->
-    <string name="server_address">http://localhost</string>
+    <string name="server_address">http://http://10.0.0.11</string>
     <string name="server_port">9999</string>
 </resources>
