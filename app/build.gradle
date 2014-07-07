@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android'
 
 android {
     compileSdkVersion 20
@@ -11,6 +12,9 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    configurations{
+        provided
+    }
     buildTypes {
         release {
             runProguard false
@@ -21,6 +25,11 @@ android {
 }
 
 dependencies {
-    classpath ('com.amazon.device.messaging.ADM')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    provided fileTree(dir: 'ext_libs', include: '*.jar')
 }
+android.applicationVariants.all {
+    variant -> variant.javaCompile.classpath += configurations.provided
+}
+
+
+

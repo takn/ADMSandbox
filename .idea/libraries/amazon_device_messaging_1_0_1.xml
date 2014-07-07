@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="amazon-device-messaging-1.0.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/amazon-device-messaging-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/ext_libs/amazon-device-messaging-1.0.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
